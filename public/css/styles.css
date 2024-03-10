@@ -1,0 +1,55 @@
+body {
+  color: #333333;
+  font-family: arial;
+  max-width: 650px;
+  margin: 0 auto; /*auto will evenly distribute the space on the left and right */
+  padding: 0 16px;
+
+  display: flex; /*enable flexbox */
+  flex-direction: column; /*all items in the body tag goes top to bottom */
+  min-height: 100vh; /*body to take 100% of browser height vh(view port) so that footer is pushed to the bottom*/
+}
+
+.main-content {
+  flex-grow: 1; /*footer is pushed to the bottom. main content to take up all the leftover space*/
+}
+
+footer {
+  color: #888888;
+  border-top: 1px solid #eeeeee;
+  margin-top: 16px;
+  padding: 16px 0; /*top&bottom, left&right*/
+}
+header {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+/*targeting a links inside header*/
+header a {
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none; /*removes the underline in the hyperlink*/
+}
+
+.portrait {
+  width: 250px;
+}
+
+input {
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #88888888;
+  background: #888888;
+  color: white;
+  padding: 8px;
+}
